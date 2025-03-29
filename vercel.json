@@ -3,6 +3,7 @@
     "build": {
       "command": "npm run build"
     },
+    "installCommand": "npm install",
     "builds": [
       {
         "src": "dist/main.js",
@@ -16,4 +17,4 @@
         "methods": ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]
       }
     ]
-}
+  }
