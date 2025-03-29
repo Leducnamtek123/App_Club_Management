@@ -18,7 +18,7 @@ import {
     }
   
     handleConnection(client: Socket) {
-      this.logger.log(`Client connected: ${client.id}`);
+      this.logger.log(`Client connected to: ${client.id}`);
       
     }
   
