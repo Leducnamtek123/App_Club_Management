@@ -39,7 +39,7 @@ export class EventsService {
         const eventData = {
             title: dto.title,
             description: dto.description,
-            startDate: new Date(dto.startDate),
+            startDate: dto.startDate,
             endDate: dto.endDate,
             ticketClosingDate: dto.ticketClosingDate
                 ? new Date(dto.ticketClosingDate)

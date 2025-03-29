@@ -5,7 +5,6 @@ import {
   StringFieldOptional,
   DateFieldOptional,
   NumberFieldOptional,
-  DateField,
 } from '../../../decorators/field.decorators';
 
 export class UpdateEventDto {
