@@ -105,7 +105,6 @@ export class EventsService {
             });
         }
 
-        queryBuilder.orderBy('event.eventDate', pageOptionsDto.order || 'DESC');
 
         // Áp dụng phân trang
         const [items, pageMetaDto] = await queryBuilder.paginate(pageOptionsDto);
