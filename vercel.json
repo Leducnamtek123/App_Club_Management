@@ -1,16 +1,19 @@
 {
-  "version": 2,
-  "builds": [
+    "version": 2,
+    "build": {
+      "command": "npm run build"
+    },
+    "builds": [
       {
-          "src": "dist/main.js",
-          "use": "@vercel/node"
+        "src": "dist/main.js",
+        "use": "@vercel/node"
       }
-  ],
-  "routes": [
+    ],
+    "routes": [
       {
-          "src": "/(.*)",
-          "dest": "dist/main.js",
-          "methods": ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]
+        "src": "/(.*)",
+        "dest": "dist/main.js",
+        "methods": ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]
       }
-  ]
+    ]
 }
