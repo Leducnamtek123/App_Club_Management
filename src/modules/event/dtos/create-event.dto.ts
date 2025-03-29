@@ -2,7 +2,6 @@ import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 import { IsEnum } from 'class-validator';
 import {
   StringField,
-  DateField,
   NumberField,
   DateFieldOptional,
 } from '../../../decorators/field.decorators';
@@ -18,11 +17,9 @@ export class CreateEventDto {
   description!: string;
 
   @ApiProperty()
-  @DateField({ nullable: false })
   startDate!: string;
 
   @ApiProperty()
-  @DateField({ nullable: false })
   endDate!: string;
 
   @ApiPropertyOptional()

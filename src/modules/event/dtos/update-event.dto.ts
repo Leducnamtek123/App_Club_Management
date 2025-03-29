@@ -18,11 +18,9 @@ export class UpdateEventDto {
   description?: string;
 
   @ApiProperty()
-  @DateField({ nullable: false })
   startDate!: string;
 
   @ApiProperty()
-  @DateField({ nullable: false })
   endDate!: string;
 
   @ApiPropertyOptional()
